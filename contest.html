@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國北數位-比賽數據</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=DotGothic16&family=Mochiy+Pop+P+One&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="img/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-storage-compat.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- 轉圈圈 -->
+    <div class="loader_bg">
+        <div class="big_loader">
+        </div>
+        <div class="big_loader_ios">
+        </div>
+    </div>
+    <!-- 頂部的導覽列 -->
+    <header class="header">
+        <div class="head_container">
+            <a class="logo" href="index.html">
+                <img src="./img/logo.png" alt="" class="logo_img">
+                <h1 class="logo_h1">DTDBK</h1>
+            </a>
+            <input id="nav-toggle" type="checkbox">
+            <label for="nav-toggle" class="ham">
+              <div class="ham-origin">
+                <div class="ham-bar ham-bar--top"></div>
+                <div class="ham-bar ham-bar--middle"></div>
+                <div class="ham-bar ham-bar--bottom"></div>
+              </div>
+            </label>
+            <div class="nav">
+                <ul class="nav_ul ap">
+                    <li class="nav_li"><a href="index.html"class="nav_li_h2 ap">最新消息</a></li>
+                    <li class="nav_li"><a href="member.html"class="nav_li_h2 ap">關於球隊</a></li>
+                    <li class="nav_li"><a href="contest.html"class="nav_li_h2 ap">比賽數據</a></li>   
+                    <li class="nav_li"><a href="history.html"class="nav_li_h2 ap">數位迴廊</a></li>      
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- 文章的內容 -->
+    <article> 
+        <div class="no"></div>
+        <div class="big">
+            <div id="big_contest">
+                <img src="./svg/人.svg" alt="" class="svg contest_svg_human" >
+                <img src="./svg/字.svg" alt="" class="svg contest_svg_word" >
+                <img src="./svg/星星.svg" alt="" class="svg contest_svg_star" >
+                <img src="./svg/背.svg" alt="" class="svg contest_svg_bg"  >
+                <img src="./svg/球_1.svg" alt="" class="svg contest_svg_ball_1" >
+                <img src="./svg/球_2.svg" alt="" class="svg contest_svg_ball_2">
+                <img src="./svg/球_3.svg" alt="" class="svg contest_svg_ball_3" >
+                
+
+            </div>
+        </div>
+        <div class="container"> 
+            <div class="new">
+                <div class="ap">
+                    <div class="title_line">
+                    </div>
+                    <h2 class="title main_size main_c">比賽數據</h2>
+                    <div class="title_line">
+                    </div>
+                </div>
+            </div>
+            <div class="content_item">
+                <div class="content_choose">
+                    <div class="match_submit_box">
+                        <select id="season" class="p_size main_c">
+                            <option  value="">請選擇賽季</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                        </select>
+                    
+                        <select id="team" class="p_size main_c">
+                            <option value="">請選擇隊伍</option>
+                            <option value="men">男籃</option>
+                            <option value="women">女籃</option>
+                        </select>
+                    </div>
+                    
+
+                    <div class="match_submit_box ">
+                        <select id="match" disabled  class="p_size main_c">
+                            <option value="" >請選擇比賽場次</option>
+                        </select>
+                        <button id="submit" disabled class="p_size">查詢</button>
+                    </div>
+
+                </div>
+                
+            
+                <div class="table_box">
+                    <table id="player-data">
+                        <thead class="content_thead">
+                            <tr class="table_tr">
+                                <th class="sticky-column">&nbsp;球員姓名&nbsp;</th>
+                                <th>位置</th>
+                                <th>得分</th>
+                                <th>兩分命中</th>
+                                <th>兩分出手</th>
+                                <th>三分命中</th>
+                                <th>三分出手</th>
+                                <th>籃板</th>
+                                <th>助攻</th>
+                                <th>抄截</th>
+                                <th>阻攻</th>
+                                <th>失誤</th>
+                                <th>助攻</th>
+                                <th>犯規</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 資料將在這裡動態生成 -->
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+
+    </article>
+
+    <!-- 底部的腳腳 -->    
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="footer_item">
+                <div class="footer_icon">
+                    <img src="./img/地標.png" alt="" class="footer_icon">
+                </div>
+                <div class="footer_t sup_c">
+                    <p class="ft  ">球團總部</p>
+                    <p class="fp ">國立台北教育大學創意館<br>NTUE Creative Museum</p>
+                </div>
+            </div>
+            <div class="footer_item">
+                <div class="footer_icon">
+                    <img src="./img/時間.png" alt="" class="footer_icon" >
+                </div>
+                <div class="footer_t sup_c">
+                    <p class="ft ">練球時間</p>
+                    <p class="fp ">男籃：(二)18：30-20：30 (五)18：30-20：30<br>女籃：(一)18：30-20：30 (三)17：30-18：30</p>
+                </div>
+            </div>
+            <div class="footer_item">
+                <div class="footer_icon">
+                    <img src="./img/電話.png" alt="" class="footer_icon">
+                </div>
+                <div class="footer_t sup_c">
+                    <p class="ft ">聯絡我們</p>
+                    <div class="fp">
+                        <a class="foot_icon_box" href="https://www.instagram.com/the.dtd_bk/" target="_blank">
+                            <img src="./img/ig.png" class="foot_icon" alt="ig" >
+                        </a>
+                        <a class="foot_icon_box" href="https://www.instagram.com/the.dtd_bk/" target="_blank">
+                            <img src="./img/fb.png" class="foot_icon" alt="fb" >
+                        </a>
+                        <a class="foot_icon_box" href="https://www.instagram.com/the.dtd_bk/" target="_blank">
+                            <img src="./img/yt.png" class="foot_icon" alt="yt" >
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div>
+                <p class="sup_c copyright">©Copyright All rights reserved.</p>
+            </div>
+    </footer>
+    
+    <script src="./js/index.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/contest.js"></script>
+    <script src="./js/contest_gsap.js"></script>
+    <script src="./js/load.js"></script>
+
+
+</body>
+</html>

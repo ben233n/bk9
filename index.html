@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國北數位-DTDBK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=DotGothic16&family=Mochiy+Pop+P+One&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="img/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-storage-compat.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- 轉圈圈 -->
+    <div class="loader_bg">
+        <div class="big_loader">
+        </div>
+        <div class="big_loader_ios">
+        </div>
+    </div>
+    <!-- 頂部的導覽列 -->
+    <header class="header">
+        <div class="head_container">
+            <a class="logo" href="index.html">
+                <img src="./img/logo.png" alt="" class="logo_img">
+                <h1 class="logo_h1">DTDBK</h1>
+            </a>
+            <input id="nav-toggle" type="checkbox">
+            <label for="nav-toggle" class="ham">
+              <div class="ham-origin">
+                <div class="ham-bar ham-bar--top"></div>
+                <div class="ham-bar ham-bar--middle"></div>
+                <div class="ham-bar ham-bar--bottom"></div>
+              </div>
+            </label>
+            <div class="nav">
+                <ul class="nav_ul ap">
+                    <li class="nav_li"><a href="index.html"class="nav_li_h2 ap">最新消息</a></li>
+                    <li class="nav_li"><a href="member.html"class="nav_li_h2 ap">關於球隊</a></li>
+                    <li class="nav_li"><a href="contest.html"class="nav_li_h2 ap">比賽數據</a></li>   
+                    <li class="nav_li"><a href="history.html"class="nav_li_h2 ap">數位迴廊</a></li>      
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- 文章的內容 -->
+    <article> 
+        <div class="no"></div>
+        <!-- 大圖片 -->
+        <div class="big">
+            <div id="big_index">
+                <img src="./svg/首頁字.svg" alt="" class="svg_3 big_index_word" >
+                <img src="./svg/向量球.svg" alt="" class="svg_3 big_index_ball " >
+                <img src="./svg/遊戲機.svg" alt="" class="svg_3 big_index_game" >
+                <img src="./svg/雲.svg" alt="" class="svg_3 big_index_cloud" >  
+                <img src="./svg/光.svg" alt="" class="svg_3 big_index_light_c" >    
+                
+                <img src="./svg/正方形光.svg" alt="" class="svg_3 big_index_light" >
+                <img src="./svg/底下的線.svg" alt="" class="svg_3 big_index_line" >
+                
+
+            </div>
+        </div>
+
+        <div class="container"> 
+            <div class="new">
+                <div class="ap">
+                    <div class="title_line">
+                    </div>
+                    <h2 class="title main_size main_c">最新消息</h2>
+                    <div class="title_line">
+                    </div>
+                </div>
+                <h2 class="ap title_content main_c word_c item_size" id="new_small">提供最新的消息，讓你成為消息界的大王</h2>
+                <div class="new_item">
+                    <div class="reels sh">
+                        <div class="reels_btn_box">
+                            <div class="reels_btn">
+                                <img src="./img/左黑箭頭.png" alt="" class="reels_arrow">
+                            </div>
+                            <div class="reels_btn">
+                                <img src="./img/黑箭頭.png" alt="" class="reels_arrow">
+                            </div>
+                        </div>
+                        <div class="carousel">
+                            <div class="carousel_item"><!--最後一張的照片要跟第一張照片一樣-->
+                                <a href="https://www.instagram.com/p/C_YUZgHvO5X/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+                                    <img src="./img/測試2.jpg" alt="" class="carousel_img" width="100%">
+                                </a>
+                            </div>
+                            <div class="carousel_item">
+                                <a href="https://www.instagram.com/p/DCHcTFgTlBx/?igsh=c2wxOWkzeDQ3OXJu" target="_blank">
+                                    <img src="./img/2024.11.8.png" alt="" class="carousel_img" width="100%">
+                                </a>
+                            </div>
+                            <div class="carousel_item">
+                                <a href="https://www.instagram.com/p/DCHbdv5THdL/?igsh=MXdra2lndzBka2dpbg%3D%3D" target="_blank">
+                                    <img src="./img/5735.png" alt="" class="carousel_img" width="100%">
+                                </a>
+                            </div>
+                            <div class="carousel_item">
+                                <a href="https://www.instagram.com/p/DBJglnxTaGB/?igsh=Z2Jtc3c0dzUyZ2pr" target="_blank">
+                                    <img src="./img/14611.png" alt="" class="carousel_img" width="100%">
+                                </a>
+                            </div>
+                            <div class="carousel_item"><!--最後一張的照片要跟第一張照片一樣-->
+                                <a href="https://www.instagram.com/p/C_YUZgHvO5X/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
+                                    <img src="./img/測試2.jpg" alt="" class="carousel_img" width="100%">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="report">
+                        <a href="new_1.html"class="report_item sh" >
+                            <div class="report_img_box">
+                                <img src="./img/奇蹟世代.png" alt="" class="report_img">
+                            </div>
+                            <div class="report_word_box">
+                                <div class="word">
+                                    <div class="report_word_item">
+                                        <h3 class="report_word sup_c item_size">
+                                            奇蹟世代到場相助，大勝兒英系22分
+                                        </h3>
+                                        <p class="report_word_p sup_c p_size">
+                                            三位冠軍學長到場支援輸贏，讓數位系以22分擊敗友誼賽作客的兒英系，學長呂修逸更在賽後宣布回歸消息
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="./img/箭頭.png" alt="" class="arrow">
+                            </div>
+                        </a>
+                        <a href="new_2.html"class="report_item sh">
+                            <div class="report_img_box">
+                                <img src="./img/全新.png" alt="" class="report_img">
+                            </div>
+                            <div class="report_word_box">
+                                <div class="word">
+                                    <div class="report_word_item">
+                                        <h3 class="report_word sup_c item_size">
+                                            全新陣容的第一戰，持續磨合備戰新賽季
+                                        </h3>
+                                        <p class="report_word_p sup_c p_size">
+                                            新賽季的開始，與社發系的友誼賽在風雨中進行，新陣容的組合受到考驗，以1分之差敗給社發
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="./img/箭頭.png" alt="" class="arrow">
+                            </div>
+                        </a>
+                        <a href="new_3.html"class="report_item sh">
+                            <div class="report_img_box">
+                                <img src="./img/女籃.png" alt="" class="report_img">
+                            </div>
+                            <div class="report_word_box">
+                                <div class="word">
+                                    <div class="report_word_item">
+                                        <h3 class="report_word sup_c item_size">
+                                            女籃強勢闖進冠軍賽，惜敗幼教系抱回亞軍
+                                        </h3>
+                                        <p class="report_word_p sup_c p_size">
+                                            女戰神的驚險AND 1帶著數位女籃闖入冠軍賽，可惜在最後不敵幼教系的團體默契，今年退居第二名位置
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="./img/箭頭.png" alt="" class="arrow">
+                            </div>
+
+                        </a>
+                        <a href="new_4.html"class="report_item sh">
+                            <div class="report_img_box">
+                                <img src="./img/校長盃.png" alt="" class="report_img">
+                            </div>
+                            <div class="report_word_box">
+                                <div class="word">
+                                    <div class="report_word_item">
+                                        <h3 class="report_word sup_c item_size">
+                                            男籃勇闖校長盃，以衛冕軍身分奪下二連霸
+                                        </h3>
+                                        <p class="report_word_p sup_c p_size">
+                                            在奇蹟世代的帶領之下，數位男籃四進四出，傳奇的隊伍邁向最終戰，在大家的努力下二度守護冠軍寶座
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="./img/箭頭.png" alt="" class="arrow">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="new ">
+                <div class="ap">
+                    <div class="title_line">
+                    </div>
+                    <h2 class="title main_size main_c">交流分享</h2>
+                    <div class="title_line">
+                    </div>
+
+                </div>
+                <h2 class="ap title_content main_c word_c item_size" id="share_title">這邊提供大家交流與分享的空間，快來說句幹話吧</h2>
+                <div class="new_item">
+                    <div class="shareimg">
+                        <div class="shareimg_img sh">
+                            <img src="" alt="" id="shareimg_img_img">
+                        </div>
+                        <div class="shareimg_upload sh">
+                            <input type="file" class="input_img" id="input_img" accept="image/png, image/jpeg" />
+                            <label for="input_img" class="upload ap ">
+                                <div class="uploadimg_box ap">
+                                    <img src="./img/上傳.png" alt="上傳" class="uploadimg">
+                                    <div class="loader"></div>
+                                    <h3 class="p_size main_c" id="youcanup">此處可分享照片</h3>
+                                </div>
+                            </label>
+                            <div class="upload_btn_box">
+                                <div id="fileName" class="file_name p_size">尚未選擇檔案</div>
+                                <div id="upbtn" class=" p_size"> 上傳</div>
+                                <div id="cancelbtn" class=" p_size"> 取消</div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    <div class="sharespeak sh">
+                        <div class="chat_room">
+                            <div class="chat_header">
+                                <img src="./img/聊天室.png" alt="" class="chat_img">
+                                <h3 class="sup2_c main_size">留言板</h3>
+                            </div>
+                            <div class="chat_body">
+
+                            </div>
+                            <div class="chat_footer">
+                                <div id="chat_user" class="chat_user">
+                                    <div class="chat_user_head"></div>    
+                                    <div class="chat_user_body"></div>                       
+                                </div>
+                                <input type="text" id="chat_input" placeholder="輸入你的留言" class="main_c item_size">
+                                <img src="./img/發送.png" alt="" id="chat_send">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+          <div id="overlay"></div>
+          <div id="popup">
+              <span class="close">&times;</span>
+              <div class="popup_content bug">
+                    <h3 >成功抓到第 <span id="clickCountDisplay">0</span> 個bug</h3>
+                    <h3 >🐛🐛🐛</h3>
+              </div>
+          </div>
+
+    </article>
+
+    <!-- 底部的腳腳 -->    
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="footer_item">
+                <div class="footer_icon">
+                    <img src="./img/地標.png" alt="" class="footer_icon">
+                </div>
+                <div class="footer_t sup_c">
+                    <p class="ft  ">球團總部</p>
+                    <p class="fp ">國立台北教育大學創意館<br>NTUE Creative Museum</p>
+                </div>
+            </div>
+            <div class="footer_item">
+                <div class="footer_icon">
+                    <img src="./img/時間.png" alt="" class="footer_icon" >
+                </div>
+                <div class="footer_t sup_c">
+                    <p class="ft ">練球時間</p>
+                    <p class="fp ">男籃：(二)18：30-20：30 (五)18：30-20：30<br>女籃：(一)18：30-20：30 (三)17：30-18：30</p>
+                </div>
+            </div>
+            <div class="footer_item">
+                <div class="footer_icon">
+                    <img src="./img/電話.png" alt="" class="footer_icon">
+                </div>
+                <div class="footer_t sup_c">
+                    <p class="ft ">聯絡我們</p>
+                    <div class="fp">
+                        <a class="foot_icon_box" href="https://www.instagram.com/the.dtd_bk/" target="_blank">
+                            <img src="./img/ig.png" class="foot_icon" alt="ig" >
+                        </a>
+                        <a class="foot_icon_box" href="https://www.instagram.com/the.dtd_bk/" target="_blank">
+                            <img src="./img/fb.png" class="foot_icon" alt="fb" >
+                        </a>
+                        <a class="foot_icon_box" href="https://www.instagram.com/the.dtd_bk/" target="_blank">
+                            <img src="./img/yt.png" class="foot_icon" alt="yt" >
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div>
+                <p class="sup_c copyright">©Copyright All rights reserved.</p>
+            </div>
+    </footer>
+    
+    <script src="./js/firebase.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/index_gsap.js"></script>
+    <script src="./js/load.js"></script>
+
+</body>
+</html>

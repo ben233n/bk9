@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國北數位-新聞報導</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=DotGothic16&family=Mochiy+Pop+P+One&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="img/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-storage-compat.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- 轉圈圈 -->
+    <div class="loader_bg">
+        <div class="big_loader">
+        </div>
+        <div class="big_loader_ios">
+        </div>
+    </div>
+    <!-- 頂部的導覽列 -->
+    <header class="header">
+        <div class="head_container">
+            <a class="logo" href="index.html">
+                <img src="./img/logo.png" alt="" class="logo_img">
+                <h1 class="logo_h1">DTDBK</h1>
+            </a>
+            <input id="nav-toggle" type="checkbox">
+            <label for="nav-toggle" class="ham">
+              <div class="ham-origin">
+                <div class="ham-bar ham-bar--top"></div>
+                <div class="ham-bar ham-bar--middle"></div>
+                <div class="ham-bar ham-bar--bottom"></div>
+              </div>
+            </label>
+            <div class="nav">
+                <ul class="nav_ul ap">
+                    <li class="nav_li"><a href="index.html"class="nav_li_h2 ap">最新消息</a></li>
+                    <li class="nav_li"><a href="member.html"class="nav_li_h2 ap">關於球隊</a></li>
+                    <li class="nav_li"><a href="contest.html"class="nav_li_h2 ap">比賽數據</a></li>   
+                    <li class="nav_li"><a href="history.html"class="nav_li_h2 ap">數位迴廊</a></li>      
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- 文章的內容 -->
+    <article> 
+        <div class="no"></div>
+        <div class="container"> 
+            <div class="new_page">
+                <div class="new_page_word_box">
+                    <h4 class="new_page_h4">冠軍學長現身加持！數位男籃大勝兒英系</h4>
+                    <p class="new_page_p">編輯/謝宏碩 2024-11-08</p>
+                </div>
+                <div class="new_page_img_box">
+                    <img src="./img/奇蹟世代新聞報導.png" alt="奇蹟世代新聞報導" class="new_page_img">
+                </div>
+                <div class="new_page_word_box">
+
+                    <p class="new_page_p">　　近日，數位男籃在與兒英系的友誼賽中上演了一場壓倒性的勝利。這場比賽的亮點之一，便是三位曾經帶領數位系奪冠的學長親臨現場助陣。這三位冠軍學長不僅在比賽期間提供了實戰指導，更與隊員們分享了豐富的比賽經驗，讓年輕的數位男籃如虎添翼。</p>
+                    <br>
+                    <p class="new_page_p">　　比賽中，數位男籃從一開始便牢牢掌控節奏，無論是進攻還是防守都表現得十分出色。在老將與新秀的合力之下，數位系最終以22分的巨大優勢擊敗兒英系，展現了驚人的團隊實力。</p>
+                    <br>
+                    <p class="new_page_p">　　賽後，學長呂修逸更宣布了一個令人振奮的消息——他將正式回歸數位男籃的陣容。這一消息無疑為整個球隊注入了一劑強心針，隊員們士氣高昂，大家也對未來的比賽信心倍增。這場友誼賽的勝利不僅僅是比分上的輝煌，更是數位男籃在新賽季中邁出的堅實一步，為接下來的比賽奠定了良好的基礎。</p>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <!-- 底部的腳腳 -->    
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="footer_item">
+                <div class="footer_icon">
+                    <img src="./img/地標.png" alt="" class="footer_icon">
+                </div>
+                <div class="footer_t sup_c">
+                    <p class="ft  ">球團總部</p>
+                    <p class="fp ">國立台北教育大學創意館<br>NTUE Creative Museum</p>
+                </div>
+            </div>
+            <div class="footer_item">
+                <div class="footer_icon">
+                    <img src="./img/時間.png" alt="" class="footer_icon" >
+                </div>
+                <div class="footer_t sup_c">
+                    <p class="ft ">練球時間</p>
+                    <p class="fp ">男籃：(二)18：30-20：30 (五)18：30-20：30<br>女籃：(一)18：30-20：30 (三)17：30-18：30</p>
+                </div>
+            </div>
+            <div class="footer_item">
+                <div class="footer_icon">
+                    <img src="./img/電話.png" alt="" class="footer_icon">
+                </div>
+                <div class="footer_t sup_c">
+                    <p class="ft ">聯絡我們</p>
+                    <div class="fp">
+                        <a class="foot_icon_box" href="https://www.instagram.com/the.dtd_bk/" target="_blank">
+                            <img src="./img/ig.png" class="foot_icon" alt="ig" >
+                        </a>
+                        <a class="foot_icon_box" href="https://www.instagram.com/the.dtd_bk/" target="_blank">
+                            <img src="./img/fb.png" class="foot_icon" alt="fb" >
+                        </a>
+                        <a class="foot_icon_box" href="https://www.instagram.com/the.dtd_bk/" target="_blank">
+                            <img src="./img/yt.png" class="foot_icon" alt="yt" >
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div>
+                <p class="sup_c copyright">©Copyright All rights reserved.</p>
+            </div>
+    </footer>
+    
+    <script src="./js/index.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/new_gsap.js"></script>
+    <script src="./js/load.js"></script>
+
+
+</body>
+</html>

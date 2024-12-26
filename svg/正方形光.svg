@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1621.61 558.12">
+  <defs>
+    <linearGradient id="uuid-e2893de6-c31d-4a50-b914-6cae9acda733" data-name="Gradiente sem nome 16" x1="176.77" y1="134.78" x2="176.77" y2="236.57" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0" stop-color="#e6e6e6"/>
+      <stop offset=".02" stop-color="#cacaca"/>
+      <stop offset=".03" stop-color="#b9b9b9"/>
+      <stop offset=".04" stop-color="#b3b3b3"/>
+      <stop offset="1" stop-color="#4d4d4d"/>
+    </linearGradient>
+    <linearGradient id="uuid-88437279-4aa5-4a60-9a67-b9903b6ae6ed" data-name="Gradiente sem nome 16" x1="449.27" y1="38.98" x2="449.27" y2="114.1" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-e0dfd483-51d4-4298-b9b8-ad76bde4edea" data-name="Gradiente sem nome 16" x1="645.05" y1="153.24" x2="645.05" y2="313.14" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-c3b960c2-187c-4c2d-bef4-79467b22d521" data-name="Gradiente sem nome 16" x1="613.1" y1="283.7" x2="613.1" y2="447.09" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-cb8fc96e-6fda-4ae3-b884-4434abd71948" data-name="Gradiente sem nome 16" x1="536.53" y1="316.71" x2="536.53" y2="486.94" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-70cff3ce-2a61-4f3f-b18c-96129c46fb09" data-name="Gradiente sem nome 16" x1="728.05" y1="134.28" x2="728.05" y2="253.88" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-eb17bd0a-4665-47fc-a76d-61d252bb252a" data-name="Gradiente sem nome 16" x1="179.46" y1="6.35" x2="179.46" y2="91.68" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-21f297f2-69ee-415c-83bb-3c5482540bcc" data-name="Gradiente sem nome 16" x1="221.53" y1="309.41" x2="221.53" y2="482" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-81016ab9-9ada-451c-b04b-3ef935794a83" data-name="Gradiente sem nome 16" x1="131.67" y1="65.67" x2="131.67" y2="156.6" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-43c76d11-0b06-4171-b1fe-28bfa8027af5" data-name="Gradiente sem nome 16" x1="84.06" y1="162.67" x2="84.06" y2="329.25" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-9d996d2e-040e-475d-86ca-e933e1ce5479" data-name="Gradiente sem nome 16" x1="96.65" y1="262.64" x2="96.65" y2="466.1" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-dbf9ab1f-b3fb-4a88-acf2-089492101512" data-name="Gradiente sem nome 16" x1="289.02" y1="6.73" x2="289.02" y2="89.8" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-9cb51230-5f8e-405f-9e68-38941dc69a2f" data-name="Gradiente sem nome 16" x1="320.25" y1="117.86" x2="320.25" y2="232.02" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-4350d314-1c73-46e6-8900-da6de094f80d" data-name="Gradiente sem nome 16" x1="321.08" y1="238.55" x2="321.08" y2="431.17" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-c081763d-240e-4ffd-85eb-116bc198a5b1" data-name="Gradiente sem nome 16" x1="488.61" y1="224.1" x2="488.61" y2="291.52" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-90d36ef3-8608-44a8-b447-a437a4ca6b83" data-name="Gradiente sem nome 16" x1="587.63" y1="52.84" x2="587.63" y2="91.81" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-89792307-0663-43de-9c70-f544cafa02c2" data-name="Gradiente sem nome 16" x1="484.94" y1="74.12" x2="484.94" y2="150.31" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-71cbde96-b84a-437c-afe6-a6a6431a3530" data-name="Gradiente sem nome 16" x1="360.47" y1="6.99" x2="360.47" y2="58.14" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-142efab5-5c38-42c6-baef-fcff770023ad" data-name="Gradiente sem nome 16" x1="349.99" y1="-3.65" x2="349.99" y2="161.68" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-8f71c58b-1b3a-485e-bd26-ec3f32f39414" data-name="Gradiente sem nome 16" x1="615.85" y1="102.66" x2="615.85" y2="201.05" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-1c4f93e3-3fb6-49fc-8972-e807089a6f82" data-name="Gradiente sem nome 16" x1="546.57" y1="154.51" x2="546.57" y2="267.78" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-6353b15b-40d8-4d6c-91f3-4f488102543a" data-name="Gradiente sem nome 16" x1="792.26" y1="236.14" x2="792.26" y2="300.54" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-2ac770ec-9cab-40c4-b34b-0806b370bc55" data-name="Gradiente sem nome 16" x1="689.67" y1="86.24" x2="689.67" y2="121.95" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-09b1bf7f-bd12-471f-a647-896de5b3b00e" data-name="Gradiente sem nome 16" x1="1502.61" y1="163.54" x2="1502.61" y2="499.59" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-7aed7455-6ad0-4aec-9c96-2193797d43f3" data-name="Gradiente sem nome 16" x1="944.23" y1="380.59" x2="944.23" y2="502.83" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-5c129079-281c-4a66-9a9b-78d816bcf714" data-name="Gradiente sem nome 16" x1="1435.1" y1="114.71" x2="1435.1" y2="304.98" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+    <linearGradient id="uuid-c77b26cc-e506-4f4c-951c-743844f9f643" data-name="Gradiente sem nome 16" x1="1549.72" y1="13.96" x2="1549.72" y2="159.86" xlink:href="#uuid-e2893de6-c31d-4a50-b914-6cae9acda733"/>
+  </defs>
+  <g isolation="isolate">
+    <g id="uuid-b88a87c4-0ce6-423e-8972-40532b756ccb" data-name="BACKGROUND">
+      <g>
+        <g opacity=".14">
+          <rect x="128.43" y="137.03" width="96.68" height="96.68" fill="url(#uuid-e2893de6-c31d-4a50-b914-6cae9acda733)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".05">
+          <rect x="413.6" y="40.64" width="71.34" height="71.34" fill="url(#uuid-88437279-4aa5-4a60-9a67-b9903b6ae6ed)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".17">
+          <rect x="569.12" y="156.77" width="151.86" height="151.86" fill="url(#uuid-e0dfd483-51d4-4298-b9b8-ad76bde4edea)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".09">
+          <rect x="535.51" y="287.31" width="155.17" height="155.17" fill="url(#uuid-c3b960c2-187c-4c2d-bef4-79467b22d521)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".07">
+          <rect x="455.69" y="320.47" width="161.67" height="161.67" fill="url(#uuid-cb8fc96e-6fda-4ae3-b884-4434abd71948)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".07">
+          <rect x="671.26" y="136.92" width="113.58" height="113.58" fill="url(#uuid-70cff3ce-2a61-4f3f-b18c-96129c46fb09)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".19">
+          <rect x="126.47" y="8.24" width="105.98" height="81.04" fill="url(#uuid-eb17bd0a-4665-47fc-a76d-61d252bb252a)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".18">
+          <rect x="139.57" y="313.22" width="163.92" height="163.92" fill="url(#uuid-21f297f2-69ee-415c-83bb-3c5482540bcc)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".15">
+          <rect x="88.49" y="67.67" width="86.36" height="86.36" fill="url(#uuid-81016ab9-9ada-451c-b04b-3ef935794a83)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".16">
+          <rect x="4.96" y="166.35" width="158.2" height="158.2" fill="url(#uuid-43c76d11-0b06-4171-b1fe-28bfa8027af5)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".24">
+          <rect x=".03" y="267.13" width="193.23" height="193.23" fill="url(#uuid-9d996d2e-040e-475d-86ca-e933e1ce5479)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".07">
+          <rect x="216.17" y="8.57" width="145.7" height="78.89" fill="url(#uuid-dbf9ab1f-b3fb-4a88-acf2-089492101512)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".2">
+          <rect x="266.04" y="120.38" width="108.43" height="108.43" fill="url(#uuid-9cb51230-5f8e-405f-9e68-38941dc69a2f)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".18">
+          <rect x="229.62" y="242.81" width="182.92" height="182.92" fill="url(#uuid-4350d314-1c73-46e6-8900-da6de094f80d)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".18">
+          <rect x="456.59" y="225.59" width="64.03" height="64.03" fill="url(#uuid-c081763d-240e-4ffd-85eb-116bc198a5b1)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".1">
+          <rect x="569.12" y="53.7" width="37.01" height="37.01" fill="url(#uuid-90d36ef3-8608-44a8-b447-a437a4ca6b83)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".08">
+          <rect x="448.75" y="75.8" width="72.36" height="72.36" fill="url(#uuid-89792307-0663-43de-9c70-f544cafa02c2)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".02">
+          <rect x="290.15" y="8.12" width="140.63" height="48.57" fill="url(#uuid-71cbde96-b84a-437c-afe6-a6a6431a3530)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".05">
+          <rect x="271.49" width="157.01" height="157.01" fill="url(#uuid-142efab5-5c38-42c6-baef-fcff770023ad)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".19">
+          <rect x="569.12" y="104.83" width="93.45" height="93.45" fill="url(#uuid-8f71c58b-1b3a-485e-bd26-ec3f32f39414)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".27">
+          <rect x="492.78" y="157.01" width="107.57" height="107.57" fill="url(#uuid-1c4f93e3-3fb6-49fc-8972-e807089a6f82)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".04">
+          <rect x="761.68" y="237.56" width="61.17" height="61.17" fill="url(#uuid-6353b15b-40d8-4d6c-91f3-4f488102543a)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".09">
+          <rect x="672.72" y="87.02" width="33.92" height="33.92" fill="url(#uuid-2ac770ec-9cab-40c4-b34b-0806b370bc55)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".07">
+          <rect x="1383.61" y="170.96" width="238" height="319.15" fill="url(#uuid-09b1bf7f-bd12-471f-a647-896de5b3b00e)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".03">
+          <rect x="886.18" y="383.29" width="116.09" height="116.09" fill="url(#uuid-7aed7455-6ad0-4aec-9c96-2193797d43f3)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".18">
+          <rect x="1344.75" y="118.92" width="180.7" height="180.7" fill="url(#uuid-5c129079-281c-4a66-9a9b-78d816bcf714)" mix-blend-mode="color-dodge"/>
+        </g>
+        <g opacity=".16">
+          <rect x="1480.44" y="17.18" width="138.56" height="138.56" fill="url(#uuid-c77b26cc-e506-4f4c-951c-743844f9f643)" mix-blend-mode="color-dodge"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

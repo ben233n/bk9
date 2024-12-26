@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="uuid-e4910112-5f34-46bd-a129-8c4bc969a12b" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1511 820.44">
+  <defs>
+    <linearGradient id="uuid-54271026-c8df-4b8b-83a8-5817453db0ed" x1="534" y1="92.21" x2="553.61" y2="92.21" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a0d7b8"/>
+      <stop offset="1" stop-color="#00c1ca"/>
+    </linearGradient>
+  </defs>
+  <circle cx="543.8" cy="92.21" r="9.8" fill="url(#uuid-54271026-c8df-4b8b-83a8-5817453db0ed)"/>
+</svg>

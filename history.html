@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>國北數位-數位迴廊</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=DotGothic16&family=Mochiy+Pop+P+One&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="img/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/history.css">
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-storage-compat.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <!-- 轉圈圈 -->
+    <div class="loader_bg">
+        <div class="big_loader">
+        </div>
+        <div class="big_loader_ios">
+        </div>
+    </div>
+    <!-- 頂部的導覽列 -->
+    <header class="header">
+        <div class="head_container">
+            <a class="logo" href="index.html">
+                <img src="./img/logo.png" alt="" class="logo_img">
+                <h1 class="logo_h1">DTDBK</h1>
+            </a>
+            <input id="nav-toggle" type="checkbox">
+            <label for="nav-toggle" class="ham">
+              <div class="ham-origin">
+                <div class="ham-bar ham-bar--top"></div>
+                <div class="ham-bar ham-bar--middle"></div>
+                <div class="ham-bar ham-bar--bottom"></div>
+              </div>
+            </label>
+            <div class="nav">
+                <ul class="nav_ul ap">
+                    <li class="nav_li"><a href="index.html"class="nav_li_h2 ap">最新消息</a></li>
+                    <li class="nav_li"><a href="member.html"class="nav_li_h2 ap">關於球隊</a></li>
+                    <li class="nav_li"><a href="contest.html"class="nav_li_h2 ap">比賽數據</a></li>   
+                    <li class="nav_li"><a href="history.html"class="nav_li_h2 ap">數位迴廊</a></li>      
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <!-- 文章的內容 -->
+    <article> 
+        <div class="no_no"></div>
+        <div class="history">
+            <div class="ball"></div>
+            <div class="box black"></div>
+            <div id="shoot">
+                <img src="./img/投籃剪影.png" alt="" id="human_body">
+                <img src="./img/投籃剪影手.png" alt="" id="human_hard">
+            </div>
+            <img src="./img/籃板.png" alt="" id="backboard">
+            <img src="./img/觀眾.png" alt="" id="audience">
+            <img src="./img/觀眾.png" alt="" id="audience_2">
+            <div id="home"></div>
+            <div id="home_2"></div>
+            <div id="home_3"></div>
+            <img src="./img/純籃框.png" alt="" id="hoop">
+            <img src="./img/觀眾.png" alt="" id="audience_3">
+
+        </div>
+        <div class="big_title_box" id="his_1">
+            <div class="big_title">
+                <div class="big_word_his">
+                    <h2 class="big_word">2024年度</h2>
+                    <h3 class="big_small">精彩回顧</h3>
+                </div>
+                <div class="big_round" id="round_1"></div>
+                <div class="big_round" id="round_2"></div>
+                <div class="big_round" id="round_3"></div>
+                <div class="big_round" id="round_4"></div>
+                <div class="big_round" id="round_5"></div>
+                <div class="big_round" id="round_6"></div>
+
+            </div>
+        </div>
+        <div class="big_title_box">
+            <div class="big_blue">
+                <img src="./img/男籃1.JPG" alt=""class="big_blue_img sh">
+                <div class="big_blue_word">
+                    <h4 class="big_blue_h4">奇蹟世代締造傳奇</h4>
+                    <p class="big_blue_p">
+                        　　衛冕軍團的最後一舞，由奇蹟世代領軍的數位男籃強勢闖入冠軍賽，展現出冠軍精神與姿態，以團隊防守帶動火力反擊，一次次攻破對手陣型。
+                    </p>
+                    <br>
+                    <p class="big_blue_p">
+                        　　在末節，黃塏峻的連續三分球讓比賽瞬間傾向數位系，也在響哨之時宣判了數位系的勝利，數位男籃再度登上校長盃的冠軍寶座，對大家來說是一整年下來最甜美的果實，也是最讓人期望的結果。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="big_title_box" >
+            <div class="big_pur">
+                <img src="./img/女籃1.JPG" alt=""class="big_blue_img sh">
+                <div class="big_blue_word">
+                    <h4 class="big_blue_h4">彩虹戰隊攜手抗敵</h4>
+                    <p class="big_blue_p">
+                        　　擁有恐怖實力，人見人怕的數位女籃，在今年校長盃中雖失去上賽季FMVP領軍，依然靠著團隊協心合作走到冠軍戰，可說是令人敬佩。
+                    </p>
+                    <br>
+                    <p class="big_blue_p">
+                        　　拿下銀牌是數位女籃在擁有傷兵所面臨的結果，但無論拿下什麼獎盃，彩虹戰隊的不屈精神才是真正讓大家為之動容的，面對對手施壓、逆風開局，依舊上下一心，對籃球，對團隊，都致上最高的敬意，相信數位女籃能夠帶著這份經驗，持續面臨下一場挑戰。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="big_title_box" >
+            <div class="big_white">
+                <div class="big_word_his">
+                    <h3  id="next_year">2025</h3>
+                    <h2  id="gogogo">繼續向前進</h2>
+                </div>
+                <div class="happy">🎉</div>
+            </div>
+        </div>
+        
+
+
+    </article>
+
+    <!-- 底部的腳腳 -->    
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="footer_item">
+                <div class="footer_icon">
+                    <img src="./img/地標.png" alt="" class="footer_icon">
+                </div>
+                <div class="footer_t sup_c">
+                    <p class="ft  ">球團總部</p>
+                    <p class="fp ">國立台北教育大學創意館<br>NTUE Creative Museum</p>
+                </div>
+            </div>
+            <div class="footer_item">
+                <div class="footer_icon">
+                    <img src="./img/時間.png" alt="" class="footer_icon" >
+                </div>
+                <div class="footer_t sup_c">
+                    <p class="ft ">練球時間</p>
+                    <p class="fp ">男籃：(二)18：30-20：30 (五)18：30-20：30<br>女籃：(一)18：30-20：30 (三)17：30-18：30</p>
+                </div>
+            </div>
+            <div class="footer_item">
+                <div class="footer_icon">
+                    <img src="./img/電話.png" alt="" class="footer_icon">
+                </div>
+                <div class="footer_t sup_c">
+                    <p class="ft ">聯絡我們</p>
+                    <div class="fp">
+                        <a class="foot_icon_box" href="https://www.instagram.com/the.dtd_bk/" target="_blank">
+                            <img src="./img/ig.png" class="foot_icon" alt="ig" >
+                        </a>
+                        <a class="foot_icon_box" href="https://www.instagram.com/the.dtd_bk/" target="_blank">
+                            <img src="./img/fb.png" class="foot_icon" alt="fb" >
+                        </a>
+                        <a class="foot_icon_box" href="https://www.instagram.com/the.dtd_bk/" target="_blank">
+                            <img src="./img/yt.png" class="foot_icon" alt="yt" >
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div>
+                <p class="sup_c copyright">©Copyright All rights reserved.</p>
+            </div>
+    </footer>
+    
+    <script src="./js/index.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/history.js"></script>
+    <script src="./js/history_gsap.js"></script>
+    <script src="./js/load.js"></script>
+
+
+
+</body>
+</html>
