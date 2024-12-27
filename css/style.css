@@ -2051,29 +2051,7 @@ select.p_size.main_c option {
     color: #43437a;
 }
 
-@media (min-width: 1200px) and (max-width: 1600px) {
-  .history{
-    transform: scale(1.2) translateY(60px) ;
 
-  }
-  #shoot{
-
-    bottom: 0;
-    left: 50px;
-
-  
-  }
-  .ball{
-    bottom: 10px;
-    left: 30px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .history{
-    display: none;
-  }
-}
 
 
 
